@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link  rel="shortcut icon" href="img/favicon.ico" />
+		<title>会员注册</title>
+	</head>
+	<body>
+		<table border="1px" bordercolor="whiet" width="900px" height="600px" bgcolor="azure" cellpadding="0.5px" cellspacing="0px">
+			<form action="URL" method="get">
+				<tr align="left">
+					<th align="left" colspan="3" bgcolor="27f36a">1.会员登录密码</th>
+				</tr>
+				<tr align="left">
+					<td>用户名:</td>
+					<td>
+						<input type="text" name="username" id="username" value="" />
+						<font color="red">*</font>
+					</td>
+					<td>
+						<button type="button">检查用户名</button> 5-15位，请用英文（a-z A-Z）,数字（0-9）
+					</td>
+				</tr>
+				<tr align="left">
+					<td>密码:</td>
+					<td>
+						<input type="password" name="pasword" id="pasword" value="" />
+						<font color="red">*</font>
+					</td>
+					<td>
+						5-15位，请用英文（a-z A-Z）,数字（0-9）密码不能与用户名相同
+					</td>
+				</tr>
+				<tr align="left">
+					<td>再次输入密码:</td>
+					<td>
+						<input type="password" name="pasword" id="pasword" value="" />
+						<font color="red">*</font>
+					</td>
+					<td colspan="3">
+						两次密码必须一致
+					</td>
+				<tr align="left">
+					<th align="left" colspan="3" bgcolor="27f36a">2.姓名与联系方式</th>
+				</tr>
+				<tr align="left">
+					<td>真实姓名:</td>
+					<td>
+						<input type="text" name="name" id="name" value=""/>
+						<font color="red">*</font>
+					</td>
+					<td>
+						<label><input type="radio" name="sex" id="sex" checked="checked" />男</label>
+						<label><input type="radio" name="sex" id="sex"/>女</label>
+					</td>
+				</tr>
+				<tr align="left">
+					<td>电子邮箱:</td>
+					<td>
+						<input type="text" name="email" id="email" value=""/>
+						<font color="red">*</font>
+					</td>
+					<td>
+						<font color="red">非常重要!</font><br /> 这个是客户与你联系的方式
+					</td>
+				</tr>
+				<tr align="left">
+					<td>联系电话:</td>
+					<td>
+						<input type="text" name="number" id="number" value="" />
+						<font color="red">*</font>
+					</td>
+					<td>区号和电话号码</td>
+				</tr>
+				<tr align="left">
+					<td>公司所在地:</td>
+					<td colspan="2">
+						<select name="country" multiple="multiple" size="2" />
+							<option value="1" selected="selected">请选择</option>
+							<option value="2">中国</option>
+							<option value="3">美国</option>
+							<option value="3">俄罗斯</option>
+						</select>
+						<select name="country" multiple="multiple" size="1">
+							<option value="1">中国</option>
+							<option value="1">美国</option>
+							<option value="1">俄罗斯</option>
+							<option value="4" selected="selected">请选择</option>
+						</select>
+					</td>
+				<tr>
+					<td>爱好</td>
+					<td colspan="2">
+						<label><input type="checkbox" name="hobby[]" id="bobby[]" value="1" />唱歌</label>
+						<label><input type="checkbox" name="hobby[]" id="bobby[]" value="2" />唱歌</label>
+						<input type="checkbox" name="hobby[]" id="bobby[]" value="3" />唱歌
+					</td>
+				</tr>
+				</tr>
+				<tr>
+					<td>街道地址：</td>
+					<td colspan="2">
+						<input type="text" name="address" id="address" value="" size="40" /> 填写完整的地址
+					</td>
+				</tr>
+				<tr>
+					<td>传真号码：</td>
+					<td colspan="2">
+						<input type="text" name="cnumbeer" id="cnumber" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td>手机号码：</td>
+					<td colspan="2">
+						<input type="text" name="phonumber" id="phonumber" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td>邮政编码：</td>
+					<td colspan="2">
+						<input type="text" name="post" id="post" value="" />
+					</td>
+				</tr>
+				<tr align="left">
+					<th align="left" colspan="3" bgcolor="27f36a">3.公司名称和主营业务</th>
+				</tr>
+				<tr>
+					<td>贵公司名称</td>
+					<td>
+						<input type="text" name="company" id="cpmpany" value="" />
+						<font color="red">*</font>
+					</td>
+					<td>请填写公司注册的全称;<br />个体请填写执照上的名字。如：张三</td>
+				</tr>
+				<tr>
+					<td>您的职位：</td>
+					<td>
+						<input type="text" name="job" id="job" value="" />
+						<font color="red">*</font>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>主营行业：</td>
+					<td>
+						<select name="industry" id="industry" multiple="multiple" size="1">
+						<option value="1">买</option>
+						<option value="2">卖</option>
+					</select>
+					</td>
+					<td>请正确选择</td>
+				</tr>
+				<tr>
+					<td>主营产品/服务:</td>
+					<td colspan="2">
+						<input type="text" name="product" id="product" value="" size="30"/>
+						<font color="red">*</font>
+						三个主要产品，例如：鞋子，袜子，裤子
+					</td>
+				</tr>
+				<tr>
+					<td>公司地址：</td>
+					<td colspan="2">
+						<input type="text" name="http" id="http" value="http://" size="30" />
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td colspan="2">
+						<input type="image" src="img/en.jpg" />
+						</a>
+					</td>
+				</tr>
+			</form>
+		</table>
+	</body>
+</html>
